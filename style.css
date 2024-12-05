@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-color: rgb(217, 231, 231);
+}
+.container{
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 50dvw;
+    height: 70dvh;
+    display: flex;
+}
+.card-left{
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+    border: none;
+    flex-basis: 50%;
+    align-items: center;
+    background: linear-gradient(to top  , hsl(241, 81%, 54%),  hsl(252, 100%, 67%));
+    color: white;
+  border-radius: 15px;
+  position: relative;
+  left: 10px;
+    
+}
+h3{
+    font-weight: normal;
+    padding-top:30px ;
+}
+.circle{
+    
+    width: 15dvw;
+    height: 30dvh;
+   border-radius: 50%;
+    border: none;
+    text-align: center;
+    background: linear-gradient(to top ,hsla(256, 85%, 35%, 0),   hsla(241, 72%, 46%, 0.7));
+}
+.circle h1{
+    padding-top: 30px;
+    font-size: 60px;
+}
+.circle span{
+    color: rgba(255, 255, 255, 0.7);
+}
+.card-left p{
+    padding-left: 10px;
+    text-align: center;
+}
+.card-right{
+    display: flex;
+    border: solid black;
+    flex-basis: 50%;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4%;
+    border: none;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    
+}
+.card-right h3{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: normal;
+    padding-top:30px ;
+
+}
+.reaction{
+    padding-left: 20px;
+    width: 19dvw;
+    height: 8dvh;
+    border: none;
+    border-radius: 10px;
+    color:  hsl(0, 83%, 68%);
+     background-color: hsla(0, 100%, 87%,0.2);
+     padding-top: 10px;
+}
+.reaction span{
+    padding-left: 80px;
+    color: rgba(0, 0, 0, 0.7); 
+}
+.memory{
+    padding-left: 20px;
+    width: 19dvw;
+    height: 8dvh;
+    border: none;
+    border-radius: 10px;
+    background-color: hsla(39, 87%, 76%,0.2);
+    color: hsl(39, 92%, 53%);
+    padding-top: 10px;
+}
+.memory span{
+    padding-left: 90px;
+    color: black;
+}
+.verbal{
+    padding-left: 20px;
+    width: 19dvw;
+    height: 8dvh;
+    border: none;
+    border-radius: 10px;
+    background-color: hsla(166, 100%, 80%,0.2);
+    color:  hsl(166, 98%, 32%);
+    padding-top: 10px;
+}
+.verbal span{
+    padding-left: 100px;
+    color: black;
+}
+.visual{
+    padding-left: 20px;
+    width: 19dvw;
+    height: 8dvh;
+    border: none;
+    border-radius: 10px;
+    background-color: hsla(234, 100%, 75%,0.2);
+    color:  hsl(234, 90%, 52%);
+    padding-top: 10px;
+}
+.visual span{
+    padding-left: 110px;
+    color: black;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 17dvw;
+    height: 8dvh;
+    border-radius: 25px;
+    padding-top: 15px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    
+
+}
+button:hover{
+    background-color:  hsl(241, 81%, 54%);
+    color: white;
+}
