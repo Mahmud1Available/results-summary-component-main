@@ -165,11 +165,11 @@ button:hover{
 }
 
 @keyframes glow{
-    50%{box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);}
+    50%{box-shadow: 9px 9px 8px rgba(0, 0, 0, 0.5);}
    
 }
 @media screen and (max-width: 500px){
-    .container{}
+   
     .card{
         display: flex;
         align-items: center;
