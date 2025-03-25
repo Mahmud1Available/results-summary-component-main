@@ -27,7 +27,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 6%;
-    border: none;
     flex-basis: 50%;
     align-items: center;
     background: linear-gradient(to top  , hsl(241, 81%, 54%),  hsl(252, 100%, 67%));
@@ -35,6 +34,13 @@ body{
   border-radius: 15px;
   position: relative;
   left: 10px;
+  p{
+    padding-left: 10px;
+    text-align: center;
+  }
+  span{
+    color: rgba(255, 255, 255, 0.7);
+  }
     
 }
  .card-left h3{
@@ -44,37 +50,27 @@ body{
 }
 .circle{
     
-    width: 15dvw;
-    height: 30dvh;
+    width:55%;
+    height: 12rem;
    border-radius: 50%;
-    border: none;
     text-align: center;
     background: linear-gradient(to top ,hsla(256, 85%, 35%, 0),   hsla(241, 72%, 46%, 0.7));
+    h1{
+        padding-top: 30px;
+        font-size: 60px;
+    }
 }
-.circle h1{
-    padding-top: 30px;
-    font-size: 60px;
-}
-.circle span{
-    color: rgba(255, 255, 255, 0.7);
-}
-.card-left p{
-    padding-left: 10px;
-    text-align: center;
-}
+
 .card-right{
     display: flex;
-    border: solid black;
     flex-basis: 50%;
     justify-items: center;
     align-items: center;
     flex-direction: column;
     gap: 4%;
-    border: none;
     background-color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    
     
 }
 .card-right h3{
@@ -85,63 +81,45 @@ body{
     padding-top:30px ;
 
 }
-.reaction{
+.cards{
     padding-left: 20px;
     width: 19dvw;
     height: 8dvh;
     border: none;
     border-radius: 10px;
-    color:  hsl(0, 83%, 68%);
-     background-color: hsla(0, 100%, 87%,0.2);
      padding-top: 10px;
+
+     span{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+       position: relative;
+       bottom: 20px;
+       right: 30px;
+       color: rgba(0, 0, 0, 0.7);
+     }
+
 }
-.reaction span{
-    padding-left: 80px;
-    
+.reaction{
+    color:  hsl(0, 83%, 68%);
+    background-color: hsla(0, 100%, 87%,0.2);
 }
+
 .memory{
-    padding-left: 20px;
-    width: 19dvw;
-    height: 8dvh;
-    border: none;
-    border-radius: 10px;
     background-color: hsla(39, 87%, 76%,0.2);
     color: hsl(39, 92%, 53%);
-    padding-top: 10px;
 }
 
 .verbal{
-    padding-left: 20px;
-    width: 19dvw;
-    height: 8dvh;
-    border: none;
-    border-radius: 10px;
     background-color: hsla(166, 100%, 80%,0.2);
-    color:  hsl(166, 98%, 32%);
-    padding-top: 10px;
+    color:  hsl(166, 98%, 32%);  
 }
 
 .visual{
-    padding-left: 20px;
-    width: 19dvw;
-    height: 8dvh;
-    border: none;
-    border-radius: 10px;
     background-color: hsla(234, 100%, 75%,0.2);
     color:  hsl(234, 90%, 52%);
-    padding-top: 10px;
 }
 
-.card-right div span{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-   position: relative;
-   bottom: 20px;
-   right: 30px;
-   color: rgba(0, 0, 0, 0.7);
-
- }
 
 button{
     display: flex;
@@ -160,14 +138,10 @@ button{
 button:hover{
     background-color:  hsl(241, 81%, 54%);
     color: white;
-    animation-name: glow;
-    animation-duration: 2s;
 }
 
-@keyframes glow{
-    50%{box-shadow: 9px 9px 8px rgba(0, 0, 0, 0.5);}
-   
-}
+
+
 @media screen and (max-width: 500px){
     .container{
         background-color: white;
@@ -180,44 +154,38 @@ button:hover{
         width: 100vw;
         height: 65rem;
         background-color: white;
-        padding-right: 12px;
        
     }
     .card-left{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
        flex-basis: 50%;
-        width: 100vw;
+        width: 100dvw;
         gap: 4%;
-        margin-right: 10px ;
+        margin-right: 11px ;
         position: relative;
         top: 60px;
         border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        margin-left: 15px;
-        
-        
-        
+        border-bottom-right-radius: 50px; 
     }
     .card-left h3{
         padding-top: 100px;
         font-size: 20px;
     }
     .card-left p{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding:2% 3% ;
         font-size: 20px;
-        padding-bottom: 30px;
     }
     .circle{
-        width: 33%;
-        height: 27%;
+        width: 40%;
+        height: 10rem;
     }
-    
     .card-right{
-        width: 100vw;
+        width: 100dvw;
         border-radius: 0;
-        margin-left: 25px;
+      
     }
     .card-right h3{
         align-self: flex-start;
@@ -233,16 +201,6 @@ button:hover{
         height: 4rem;
 
     }
-    .card-right div span{
-       display: flex;
-       align-items: flex-end;
-       justify-content: flex-end;
-      position: relative;
-      bottom: 20px;
-      right: 30px;
-
-    }
-    
     .card-right button{
         width: 90%;
         margin-left: 10px;
